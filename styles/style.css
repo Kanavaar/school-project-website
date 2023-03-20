@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+:root {
+  --bg: #FFFFFF;
+  --fg: #1D1F21;
+  --accent: #CC6666;
+  --accent-1: #81A2BE;
+}
+
+body {
+  padding-left: 25%;
+  padding-right: 25%;
+  color: var(--fg);
+  background-color: var(--bg);
+  font-family: Arvo, "sans-serif";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--fg);
+  text-decoration-color: var(--accent);
+}
+
+a:hover {
+  background-color: var(--accent-1);
+}
