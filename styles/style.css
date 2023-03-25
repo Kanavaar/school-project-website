@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Arvo);
+@import url(https://fonts.googleapis.com/css?family=Arvo&family=Overpass&family=Lato);
 
 :root {
   --bg: #FFFFFF;
@@ -13,7 +13,7 @@ body {
   padding-right: 25%;
   color: var(--fg);
   background-color: var(--bg);
-  font-family: Arvo, "sans-serif";
+  font-family: Lato, Overpass, Arvo, "sans-serif";
   font-size: 15px;
 }
 
