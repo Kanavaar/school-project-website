@@ -13,7 +13,7 @@ body {
   padding-right: 25%;
   color: var(--fg);
   background-color: var(--bg);
-  font-family: Lato, Overpass, Arvo, "sans-serif";
+  font-family: Overpass, Lato, Arvo, "sans-serif";
   font-size: 15px;
 }
 
