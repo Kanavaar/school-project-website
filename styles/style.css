@@ -131,3 +131,29 @@ h6:before {
     color: var(--red);
 }
 
+% testing stuff with animations
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    filter: blur(5px);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
