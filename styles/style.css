@@ -81,6 +81,7 @@ body {
   margin: 1em 0 2em 0;
   padding-bottom: 5px;
   border-bottom: 2px solid var(--gray);
+  font-weight: bold;
 }
 
 a {
