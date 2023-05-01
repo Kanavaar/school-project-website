@@ -7,6 +7,10 @@
   --red: #CC6666;
   --blue: #81A2BE;
   --gray: #969896;
+
+  --dark-bg: #1D1F21;
+  --dark-fg: #c5c8c6;
+  --dark-gray: #666666;
 }
 
 /* Fonts */
@@ -82,6 +86,17 @@ body {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--gray);
   font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--dark-fg);
+    background-color: var(--dark-bg);
+  }
+
+  .header {
+    border-bottom: 2px solid var(--dark-gray);
+  }
 }
 
 a {
