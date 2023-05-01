@@ -2,15 +2,15 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap) */
 
 :root {
-  --bg: #FFFFFF;
-  --fg: #1D1F21;
-  --red: #CC6666;
-  --blue: #81A2BE;
-  --gray: #969896;
+  --bg: #fbf1c7;
+  --fg: #3c3638;
+  --red: #CC241d;
+  --blue: #458588;
+  --gray: #928374;
 
-  --dark-bg: #1D1F21;
-  --dark-fg: #c5c8c6;
-  --dark-gray: #666666;
+  --dark-bg: #282828;
+  --dark-fg: #ebdbb2;
+  --dark-gray: #928374;
 }
 
 /* Fonts */
@@ -88,21 +88,6 @@ body {
   font-weight: bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--dark-fg);
-    background-color: var(--dark-bg);
-  }
-
-  .header {
-    border-bottom: 2px solid var(--dark-gray);
-  }
-
-  a {
-    color: var(--dark-fg);
-  }
-}
-
 a {
   color: var(--fg);
   text-decoration: none;
@@ -151,7 +136,8 @@ h6:before {
     color: var(--red);
 }
 
-% testing stuff with animations
+/* testing stuff with animations */
+/* Slows down to much
 section {
     display: grid;
     place-items: center;
@@ -176,4 +162,21 @@ section {
     filter: blur(0);
     transform: translateX(0);
     opacity: 1;
+}
+*/
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--dark-fg);
+    background-color: var(--dark-bg);
+  }
+
+  .header {
+    border-bottom: 2px solid var(--dark-gray);
+  }
+
+  a {
+    color: var(--dark-fg);
+  }
 }
