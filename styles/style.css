@@ -77,7 +77,12 @@ html {
 body {
   max-width: 80em;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 1rem;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--fg);
 }
 
 .header {
@@ -90,6 +95,10 @@ body {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--gray);
   font-weight: bold;
+}
+
+.header a {
+  text-transform: uppercase;
 }
 
 a {
@@ -140,6 +149,14 @@ h6:before {
     color: var(--red);
 }
 
+blockquote {
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 1em 0;
+  border-left: 3px solid var(--blue);
+}
+
 /* testing stuff with animations */
 /* Slows down to much
 section {
@@ -169,6 +186,16 @@ section {
 }
 */
 
+:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+  background-color: var(--blue);
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   html {
@@ -182,5 +209,10 @@ section {
 
   a {
     color: var(--dark-fg);
+  }
+
+  ::selection {
+    color: var(--dark-bg);
+    background-color: var(--dark-fg);
   }
 }
