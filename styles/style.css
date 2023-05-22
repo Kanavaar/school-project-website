@@ -2,15 +2,11 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap) */
 
 :root {
-  --bg: #fbf1c7;
-  --fg: #3c3638;
-  --red: #CC241d;
-  --blue: #458588;
-  --gray: #928374;
+  --red: #c94f6d;
+  --blue: #719cd6;
+  --gray: #393b44;
 
-  --dark-bg: #282828;
-  --dark-fg: #ebdbb2;
-  --dark-gray: #928374;
+  --fg: #f5f5f5;
 }
 
 /* Fonts */
@@ -68,20 +64,30 @@
 }
 
 html {
-  color: --var(--fg);
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   font-family: Lato, "sans-serif";
   font-size: 15px;
 }
 
 body {
+  color: var(--fg);
   max-width: 80em;
   margin: 0 auto;
   padding: 1rem;
+    background-image: url("https://pixabay.com/get/g736cd70888c23c5e316e79bf71fa051f98736934c47a2d1a3861d2388bdd2515e45d1feef9d4e65be834827430d60352896a32466c06325a4ca1a50b1b7126848c671a379c31e0e637a875d12cf6fe19_1920.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ::selection {
-  color: var(--bg);
+  color: var(--gray);
   background: var(--fg);
 }
 
@@ -195,25 +201,4 @@ section {
 
 ::-moz-focus-inner {
   border: 0;
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  html {
-    color: var(--dark-fg);
-    background-color: var(--dark-bg);
-  }
-
-  .header {
-    border-bottom: 2px solid var(--dark-gray);
-  }
-
-  a {
-    color: var(--dark-fg);
-  }
-
-  ::selection {
-    color: var(--dark-bg);
-    background-color: var(--dark-fg);
-  }
 }
